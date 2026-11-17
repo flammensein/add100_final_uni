@@ -21,6 +21,10 @@ The web configurator is in `streamlit_app.py`. It reuses the product catalog,
 pricing and validation constants, invoice formatting, and JSON order-storage
 module from the command-line app.
 
+The app guides the customer through frame and tire selection, saddle and
+seatpost selection, component selection, and a build review. Billing and
+shipping details are requested only after the customer confirms the build.
+
 Run it from the repository root:
 
 ```bash
@@ -89,6 +93,8 @@ flammen_rides_unicycles/
 ├── order_storage.py           # Persistent order history and CRUD operations
 ├── pos_defaults.py            # POS constants
 ├── product_catalog.json       # Source-of-truth product catalog
+├── requirements.txt           # Streamlit app dependency
+├── streamlit_app.py           # Guided Streamlit configurator and checkout
 ├── orders.json                # Created when the first order is submitted
 └── README.md                  # Project documentation
 ```
